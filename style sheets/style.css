@@ -1,0 +1,409 @@
+/* Universal and Body CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  /* border: 1px dotted red; */
+}
+
+a {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-height: 300vh;
+}
+
+/* Header Section with nav */
+
+#header {
+  background-color: #e7e7e7;
+  min-height: 84px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  padding-bottom: 5px;
+}
+
+nav {
+  padding: 25px 50px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-section-logo {
+  height: 48px;
+}
+
+#nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+
+#pages {
+  min-width: 235px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 86px;
+}
+
+#nav-icons > a > img {
+  height: 21px;
+  width: 21px;
+}
+
+#hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+#hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+}
+
+/* Nav Responsive css */
+@media (max-width: 768px) {
+  #header {
+    width: 100vw;
+    z-index: 10;
+  }
+
+  #nav-container {
+    display: none;
+  }
+}
+
+/* Hero section CSS */
+
+#hero-section {
+  margin-top: 120px;
+  min-height: 70vh;
+  background-image: url(../images/hero-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#hero-section-logo {
+  height: 141px;
+}
+
+#hero-section-slogan {
+  /* italionna */
+  font-family: "Italianno", cursive;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 48px;
+  letter-spacing: 5%;
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-section-slogan {
+    font-size: 30px;
+  }
+}
+
+/* About section CSS */
+
+#about {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section-title {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#about > p {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #3b3b3b;
+  width: 45vw;
+  padding: 10px;
+  text-align: center;
+}
+
+#features {
+  width: 60vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#features > div {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.feature-logo {
+  height: 44px;
+}
+
+.feature-title {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.feature-desc {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #5d5d5d;
+  text-align: center;
+}
+
+/* about section mobile screen */
+@media (max-width: 768px) {
+  #about > p {
+    width: 80%;
+  }
+  #features {
+    min-height: 30vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #features > div {
+    width: 40vw;
+  }
+
+  .feature-desc {
+    font-size: 10px;
+  }
+}
+
+/* Product section CSS */
+#products {
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#products-home-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#products-home-container > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.product-img {
+  height: 322px;
+  width: 330px;
+}
+
+.product-title {
+  font-family: "Istok Web", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #5d5d5d;
+  width: 266px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #products {
+    margin-top: 40vh;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+
+  #products-home-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* Contact section CSS */
+#contact-us {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d4c0a9;
+  padding: 50px;
+}
+
+#contact-us > h2 {
+  color: white;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 100;
+  font-size: 36px;
+}
+
+#contact-us-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+  gap: 300px;
+}
+
+#contact-us-container > img {
+  height: 360px;
+}
+
+.contact-us-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 388px;
+  width: 298px;
+}
+
+.contact-us-form > label {
+  font-family: "Istok Web", sans-serif;
+  font-size: 16px;
+}
+
+.contact-us-form > input {
+  padding: 20px;
+  width: 298px;
+  height: 45px;
+  border-radius: 25px;
+}
+
+#contact-us-message {
+  height: 115px;
+}
+
+#home-contact-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#home-contact-button-container > button {
+  height: 34px;
+  width: 100px;
+  border-radius: 25px;
+  color: #8e8e8e;
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  #contact-us {
+    margin-top: 20vh;
+    min-height: 150vh;
+    min-width: 100vw;
+    padding: 0;
+  }
+  #contact-us-container {
+    margin: 0;
+    margin-top: -20vh;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    gap: 0px;
+    flex-direction: column;
+    padding: 0;
+  }
+  #contact-us-container > img{
+    scale: 0.5;
+  }
+  #footer-line{
+    width: 80%;
+    height: 5px;
+    color: #000;
+  }
+}
+/* footer css */
+#footer {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d4c0a9;
+  padding-bottom: 20px;
+  margin-top: 3vh;
+}
+@media (max-width: 768px) {
+  footer{
+    padding: 0;
+    margin-top: -30vh;
+    margin-bottom: 10vh;
+  }
+  #footer-line{
+    display: none;
+  }
+}
